@@ -9,7 +9,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
     if (!guess)
         document.querySelector('.message').textContent = 'Enter a number';
-    else if (guess < 1 && guess > 20)
+    else if (guess < 1 || guess > 20)
         document.querySelector('.message').textContent = 'The number should be between 1 and 20';
     else if (guess == actualNum) {
         document.querySelector('.number').textContent = actualNum;
